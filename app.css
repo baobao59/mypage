@@ -1,0 +1,224 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, #566dec 0%, #f16cd6 100%);
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    border:40px gray ;
+}
+.card{
+    width: 250px;
+    height: 350px;
+    border: 1px grey solid;
+    background-color: #322932;
+    border-radius:20px 0 0 20px;
+    overflow:hidden;
+
+}
+.card-top{
+    width: 100%;
+    height: 100px;
+    background-color: #65a7f7;
+    border-radius: 18px 0 0 0;
+    position:relative;
+}
+.card-img{
+    width: 90px;
+    height: 90px;
+    border:#445cf9 3px solid;
+    border-radius:50%;
+    position:absolute;
+    right: calc(50% - 45px);
+    top: calc(100% - 45px);
+    /* overflow:hidden; */
+    transition: all 1s;
+
+}
+.card-img .avthover{
+    position: absolute;
+    left:0;
+    opacity: 0;
+    transition: all 0.6s;
+    border-radius: 50%;
+    transition-delay:0.1s ;
+}
+.card-img:hover{
+    border: none;
+    top:125px;
+    position: absolute;
+}
+.card-img .avthover:hover {
+    display: block;
+    transform: scale(4);
+    border:none;
+    border-radius: 5%;
+    opacity: 100%;
+    bottom:0;
+
+
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.card-content {
+    background-color:rgb(219, 104, 245);
+    border-radius:0 0 0 18px;
+    width: 100%;
+    height: 248px;
+    padding: 12px;
+}
+.card-content h2{
+    color:#322932;
+    margin-top: 40px;
+    text-align: center;   
+}
+
+.card-content h3{
+    text-align: center;
+    color:#322932;
+}
+.contact{
+    margin-top:20px;
+    width:100%;
+    height:50px;;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contact-item{
+    width:30px;
+    height:30px;
+    margin:10px;
+    text-align: center;
+    /* background-color:#8899fa; */
+    border-radius: 8px;
+    transition:all 0.5s;
+}
+.contact-item a i{
+    transform: translateY(50%);
+}
+i{
+    color:rgb(251, 243, 234);
+}
+.item-1:hover{
+    background-color:rgb(60, 91, 243);
+    transform: scale(1.4);
+}
+.item-2:hover{
+    background-color:rgb(255, 0, 0);
+    transform: scale(1.4);
+}
+.item-3:hover{
+    background-color:rgb(16, 16, 17);
+    transform: scale(1.4);   
+
+}
+.item-4:hover{
+    background-image: linear-gradient(45deg, #f85e56 0%, #6161f3 100%);
+    transform: scale(1.4);
+}
+.item-5:hover{
+    background-color:rgb(50, 177, 216);
+    transform: scale(1.4);
+}
+.item-6:hover{
+    background-color:rgb(244, 33, 33);
+    transform: scale(1.4);
+}
+.item-7:hover{
+    background-image: linear-gradient(135deg, #036315 0%, #ee4e4e 100%);
+    transform: scale(1.4);
+}
+.item-8:hover{
+    background-color:rgb(27, 28, 33);
+    transform: scale(1.4);
+}
+
+/* img:hover{
+    display:block;
+    width: 250px;
+    height: 100%;
+    position: relative;
+    top:0;
+    right:0;
+} */
+.info{
+    width: 250px;
+    height: 350px;
+    border: 1px grey solid;
+    background-color: #322932;
+    border-radius:0 20px 20px 0;
+    padding:15px;
+}
+.info h2{
+    color:rgb(153, 199, 240);
+    text-align: center;
+}
+.mess h3{
+    line-height: 25px;
+}
+.mess{
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    border:2px #65a7f7 solid;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin:20px auto;
+    text-align:center;
+    transition: all 0.5s;
+}
+.mess a{
+    text-decoration: none;
+    color: #322932;
+}
+.mess:hover{
+    background-color: #65a7f7;
+    cursor:pointer;
+    transform:scale(1.2);
+}
+.list{
+    width: 100%;
+    height: 200px;
+
+    margin-top:30px;
+}
+.list-item{
+    width: 100%;
+    height: 25%;
+    display:flex;
+    /* overflow: hidden; */
+    position: relative;
+
+}
+.list-item img{
+    max-width: 100px;
+    height: 50px;
+    object-fit: cover;
+}
+.list-item-img{
+    display:block;
+    margin:0 auto;
+    transition: all 1s;
+    opacity: 0;
+
+}
+span{
+    line-height: 50px;
+    color:rgb(227, 227, 227);
+}
+.list-item-img:hover{
+   transform: scale(1.2);
+   cursor: pointer;
+   opacity: 1;
+}
